@@ -1,1 +1,14 @@
-<!doctype html><html><head><title>Petskrly</title></head><body>{{ content_for_layout }}</body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ shop.name }}</title>
+    {{ content_for_header }}
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
+  </head>
+  <body>
+    {% section 'header' %}
+    {{ content_for_layout }}
+    {% section 'footer' %}
+  </body>
+</html>

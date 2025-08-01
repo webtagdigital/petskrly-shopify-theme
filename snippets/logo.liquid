@@ -1,0 +1,7 @@
+<a href="/" class="site-logo">
+  {% if settings.logo %}
+    <img src="{{ settings.logo | image_url: 'master' }}" alt="{{ shop.name }}">
+  {% else %}
+    <h1>{{ shop.name }}</h1>
+  {% endif %}
+</a>
